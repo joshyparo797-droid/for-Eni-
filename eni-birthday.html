@@ -232,7 +232,7 @@ Here’s to you, Eni. To the person you are, the person you are becoming, and al
 Happy birthday. ❤️
 And one last thing: I hope that long after today has passed, you can still return to these words and feel appreciated all over again. Because you deserve to be celebrated on ordinary days, too.
 >With genuine affection,
->Your friend.`;
+>Joshua.`;
 const txt=document.getElementById('txt');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{root:document.getElementById('letter'),threshold:.15});
 T.split('\n').forEach(l=>{const p=document.createElement('p');if(l[0]=='~'){p.className='sub';l=l.slice(1)}else if(l[0]=='>'){p.className=l.includes('cherished')?'q':'s';l=l.slice(1)}p.textContent=l;txt.appendChild(p);io.observe(p)});
